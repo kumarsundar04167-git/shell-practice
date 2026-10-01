@@ -2,7 +2,7 @@
 userid=$(id -u)
 LOGS_DIR=/var/log/script_dir
 LOG_FILE=$LOGS_DIR/$0.log
-
+sudo mkdir -p $LOGS_DIR
 TIMESTAMP=$(date "+%y-%m-%d  %h-%m-%s")
 R="\e[31m"
 G="\e[32m"
