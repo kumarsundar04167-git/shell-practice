@@ -17,8 +17,9 @@ fi
 validate(){
     if [ $2 -ne 0 ] ; then
        echo -e " $TIMESTAMP $R [ERROR] $N installing $package is ..... $R failed $N"
+       exit 1
     else 
-    echo -e " $TIMESTAMP $Y [INFO] $N installing  $package is .......$G success $N"
+       echo -e " $TIMESTAMP $Y [INFO] $N installing  $package is .......$G success $N"
     fi
 }
 

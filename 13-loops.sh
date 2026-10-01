@@ -13,9 +13,10 @@ fi
 validate(){
     if [ $2 -ne 0 ] ; then
        echo " $TIMESTAMP [ERROR] installing $package is ..... failed"
+       exit 1
     else 
-    echo " $TIMESTAMP [INFO]  installing  $package is .......success"
-    
+        echo " $TIMESTAMP [INFO]  installing  $package is .......success"
+    fi
 }
 
 for package in $@
