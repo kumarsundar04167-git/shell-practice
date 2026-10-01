@@ -13,11 +13,11 @@ validate() {
        echo "installing $1 is failed"
         exit 1
     else
-    echo "installing $1 is success"
+       echo "installing $1 is success"
     fi
 }
 dnf list installed mysql  &>> $LOG_FILE
-if [ $? -eq o ] ; then
+if [ $? -eq 0 ] ; then
     echo "mysql already installed ..... skipping" | tee -a $LOG_FILE
 else
     echo "installing mysql "
@@ -26,7 +26,7 @@ else
 fi
 
 dnf list installed nginx  &>> $LOG_FILE
-if [ $? -eq o ] ; then
+if [ $? -eq 0 ] ; then
     echo "nginx already installed ..... skipping" | tee -a $LOG_FILE
 else
     echo "installing nginx "
