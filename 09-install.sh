@@ -22,7 +22,7 @@ else
 fi
 
 dnf list installed nginx
-if [ $? -eq o ] ; then
+if [ $? -eq 0 ] ; then
     echo "nginx already installed ..... skipping"
 else
     echo "installing nginx "
