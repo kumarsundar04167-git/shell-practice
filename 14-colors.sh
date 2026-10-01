@@ -19,7 +19,7 @@ validate(){
        echo -e " $TIMESTAMP $R [ERROR] $N installing $package is ..... $R failed $N"
     else 
     echo -e " $TIMESTAMP $Y [INFO] $N installing  $package is .......$G success $N"
-    
+    fi
 }
 
 for package in $@
