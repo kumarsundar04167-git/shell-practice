@@ -30,6 +30,6 @@ if [ $? -eq 0 ] ; then
     echo "nginx already installed ..... skipping" | tee -a $LOG_FILE
 else
     echo "installing nginx "
-    dnf install mysql -y  &>> $LOG_FILE
+    dnf install nginx -y  &>> $LOG_FILE
     validate nginx $?
 fi

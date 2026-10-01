@@ -26,7 +26,7 @@ if [ $? -eq 0 ] ; then
     echo "nginx already installed ..... skipping"
 else
     echo "installing nginx "
-    dnf install mysql -y
+    dnf install nginx -y
 
     if [ $? -ne 0 ] ; then
        echo "installing nginx is failed"
