@@ -1,6 +1,6 @@
 #!/bin/bash
 SOURCE_DIR=$1
-days=${ 2 :- 14}
+days=${2:-14}
 
 if [ -z $SOURCE_DIR ]; then
    echo "error :: missing parameters"
